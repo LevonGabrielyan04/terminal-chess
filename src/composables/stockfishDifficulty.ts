@@ -16,7 +16,7 @@ export interface DifficultyConfig {
 }
 
 const STANDARD_MOVETIME_MS = 2000;
-const MASTER_MOVETIME_MS = 3000;
+const MASTER_MOVETIME_MS = 2500;
 
 export const DIFFICULTY_LEVELS: Record<DifficultyLevel, DifficultyConfig> = {
 	1: {
@@ -59,7 +59,7 @@ export const DIFFICULTY_LEVELS: Record<DifficultyLevel, DifficultyConfig> = {
 		level: 7,
 		label: "Master",
 		strength: { limitStrength: false },
-		search: { movetime: MASTER_MOVETIME_MS },
+		search: { depth: 18 },
 	},
 };
 
