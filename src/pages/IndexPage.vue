@@ -10,7 +10,9 @@ import TerminalCursor from "../components/TerminalCursor.vue";
 <template>
   <div class="terminal__body">
     <TerminalChessboard />
-    <TerminalCursor />
+    <div class="terminal__prompt">
+      <TerminalCursor />
+    </div>
   </div>
 </template>
 
@@ -18,8 +20,14 @@ import TerminalCursor from "../components/TerminalCursor.vue";
 .terminal__body {
   display: flex;
   flex: 1;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-end;
   gap: 1.25rem;
   padding: 1rem 1.1rem;
+}
+
+.terminal__prompt {
+  flex: 1;
+  min-width: 0;
 }
 </style>
