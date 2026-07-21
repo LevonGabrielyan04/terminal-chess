@@ -1,7 +1,7 @@
 import type { StockfishStrengthConfig } from "@/composables/stockfishDifficulty";
 import { computed, onUnmounted, ref, shallowRef } from "vue";
 
-const DEFAULT_ENGINE_URL = "/stockfish/stockfish-18-lite-single.js";
+const DEFAULT_ENGINE_URL = `${import.meta.env.BASE_URL}stockfish/stockfish-18-lite-single.js`;
 
 export interface StockfishSearchOptions {
 	depth?: number;
