@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { TheChessboard } from "vue3-chessboard";
 import type { BoardConfig } from "vue3-chessboard";
+import { TheChessboard } from "vue3-chessboard";
 
 import "chessground/assets/chessground.base.css";
 import "@/assets/chess/chess-layout.css";

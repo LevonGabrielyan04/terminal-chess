@@ -19,15 +19,16 @@ import TerminalCursor from "../components/TerminalCursor.vue";
 <style scoped>
 .terminal__body {
   display: flex;
-  flex: 1;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   gap: 1.25rem;
   padding: 1rem 1.1rem;
+  height: min-content;
 }
 
 .terminal__prompt {
   flex: 1;
   min-width: 0;
+  align-self: flex-end;
 }
 </style>

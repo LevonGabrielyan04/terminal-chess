@@ -7,7 +7,8 @@
 	height: 0;
 	padding-bottom: 100%;
 	cursor: pointer;
-	border: var(--chess-brutal-border-width, 0) solid var(--chess-brutal-border, transparent);
+	border: var(--chess-brutal-border-width, 0) solid
+		var(--chess-brutal-border, transparent);
 	box-shadow: var(--chess-brutal-shadow, none);
 }
 
@@ -51,7 +52,10 @@
 		calc(-1 * var(--chess-brutal-shadow-x, 0px)),
 		calc(-1 * var(--chess-brutal-shadow-y, 0px))
 	);
-	box-shadow: var(--chess-brutal-btn-shadow-hover, var(--chess-brutal-btn-shadow, none));
+	box-shadow: var(
+		--chess-brutal-btn-shadow-hover,
+		var(--chess-brutal-btn-shadow, none)
+	);
 }
 
 .promotion-dialog button:active {

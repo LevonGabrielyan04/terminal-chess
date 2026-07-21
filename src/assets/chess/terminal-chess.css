@@ -15,8 +15,8 @@
 	--chess-brutal-shadow-x: 5px;
 	--chess-brutal-shadow-y: 5px;
 	--chess-brutal-shadow-color: var(--chess-accent);
-	--chess-brutal-shadow: var(--chess-brutal-shadow-x) var(--chess-brutal-shadow-y) 0 0
-		var(--chess-brutal-shadow-color);
+	--chess-brutal-shadow: var(--chess-brutal-shadow-x)
+		var(--chess-brutal-shadow-y) 0 0 var(--chess-brutal-shadow-color);
 	--chess-brutal-gap: 0.45rem;
 	--chess-brutal-btn-border-width: 2px;
 	--chess-brutal-btn-border: var(--chess-brutal-border);
@@ -40,36 +40,43 @@
 }
 
 .terminal-chess cg-board square.move-dest {
-	background: linear-gradient(var(--chess-accent), var(--chess-accent)) center / 26% 26%
+	background:
+		linear-gradient(var(--chess-accent), var(--chess-accent)) center / 26% 26%
 		no-repeat;
 }
 
 .terminal-chess cg-board square.premove-dest {
-	background: linear-gradient(var(--chess-piece-black), var(--chess-piece-black)) center /
+	background:
+		linear-gradient(var(--chess-piece-black), var(--chess-piece-black)) center /
 		26% 26% no-repeat;
 }
 
 .terminal-chess cg-board square.oc.move-dest {
 	background:
-		linear-gradient(var(--chess-dark), var(--chess-dark)) center / 58% 58% no-repeat,
-		linear-gradient(var(--chess-accent), var(--chess-accent)) center / 78% 78% no-repeat;
+		linear-gradient(var(--chess-dark), var(--chess-dark)) center / 58% 58%
+		no-repeat,
+		linear-gradient(var(--chess-accent), var(--chess-accent)) center / 78% 78%
+		no-repeat;
 }
 
 .terminal-chess cg-board square.oc.premove-dest {
 	background:
-		linear-gradient(var(--chess-dark), var(--chess-dark)) center / 58% 58% no-repeat,
-		linear-gradient(var(--chess-piece-black), var(--chess-piece-black)) center / 78% 78%
-			no-repeat;
+		linear-gradient(var(--chess-dark), var(--chess-dark)) center / 58% 58%
+		no-repeat,
+		linear-gradient(var(--chess-piece-black), var(--chess-piece-black)) center /
+		78% 78% no-repeat;
 }
 
 .terminal-chess cg-board square.move-dest:hover {
-	background: linear-gradient(rgb(126 198 153 / 55%), rgb(126 198 153 / 55%)) center /
-		34% 34% no-repeat;
+	background:
+		linear-gradient(rgb(126 198 153 / 55%), rgb(126 198 153 / 55%)) center / 34%
+		34% no-repeat;
 }
 
 .terminal-chess cg-board square.premove-dest:hover {
-	background: linear-gradient(rgb(106 106 106 / 45%), rgb(106 106 106 / 45%)) center /
-		34% 34% no-repeat;
+	background:
+		linear-gradient(rgb(106 106 106 / 45%), rgb(106 106 106 / 45%)) center / 34%
+		34% no-repeat;
 }
 
 .terminal-chess cg-board square.last-move {
