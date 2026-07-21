@@ -1,4 +1,8 @@
 <script setup>
+defineOptions({
+	name: "IndexPage",
+});
+
 import TerminalCursor from "../components/TerminalCursor.vue";
 </script>
 

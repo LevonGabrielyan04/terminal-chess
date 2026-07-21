@@ -1,12 +1,12 @@
 <script setup>
-import Header from "./components/Header.vue";
-import IndexPage from "./pages/index.vue";
+import AppHeader from "./components/AppHeader.vue";
+import IndexPage from "./pages/IndexPage.vue";
 </script>
 
 <template>
   <div class="terminal">
     <header>
-      <Header />
+      <AppHeader />
     </header>
     <IndexPage />
   </div>

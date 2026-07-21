@@ -5,20 +5,20 @@ const input = ref("");
 const inputRef = ref<HTMLInputElement | null>(null);
 
 function onPaste(event: ClipboardEvent) {
-  const text = event.clipboardData?.getData("text") ?? "";
-  input.value += text.replace(/\r?\n/g, "");
+	const text = event.clipboardData?.getData("text") ?? "";
+	input.value += text.replace(/\r?\n/g, "");
 }
 
 function focusInput() {
-  inputRef.value?.focus();
+	inputRef.value?.focus();
 }
 
 function onBlur() {
-  requestAnimationFrame(focusInput);
+	requestAnimationFrame(focusInput);
 }
 
 onMounted(() => {
-  focusInput();
+	focusInput();
 });
 </script>
 

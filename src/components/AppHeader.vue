@@ -1,4 +1,7 @@
 <script setup>
+defineOptions({
+	name: "AppHeader",
+});
 </script>
 
 <template>
